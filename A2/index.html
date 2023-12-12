@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>360&deg; Image</title>
+  <meta name="description" content="360&deg; Image - A-Frame">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <a-scene>
+
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+
+    <a-entity id="szene1">
+      <!--<a-sky src="assets/Street View 3602.jpg" rotation="0 -130 0"></a-sky>-->
+      <a-sky src="assets/Street View 360.jpg" rotation="0 -130 0"></a-sky>
+
+      <!--<a-text font="kelsonsans" value="Hochbruecke Rottweil, Germany" width="6" position="-0.832 0.599 4"
+              rotation="0 133.132 0"></a-text>-->
+        
+        <a-text id="textOne" font="kelsonsans" text="value: Stadtgraben Rottweil, Germany" width="6"
+          position="1.280 2.458 -3.390" rotation="-0.934 -47.810 0.785"></a-text>
+        
+    </a-entity>
+
+    <a-entity id="szene2" >
+    
+      <a-sky src="assets/Street View 3602.jpg" rotation="0 -130 0"></a-sky>
+
+      <!--<a-text font="kelsonsans" value="Hochbruecke Rottweil, Germany" width="6" position="-0.832 0.599 4"
+              rotation="0 133.132 0"></a-text>-->
+        
+        <a-text id="textTwo" font="kelsonsans" text="value: Hochbruecke Rottweil, Germany" width="6"
+          position="-0.228 1.123 3.795" rotation="-5.452 135.5 0.867"></a-text>
+
+    </a-entity>
+  </a-scene>
+</body>
+
+</html>
